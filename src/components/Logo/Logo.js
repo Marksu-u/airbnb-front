@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import styles from "./Logo.module.scss";
-import logo from '../../../public/logo.png'
+import logo from '../../../public/logo.png';
 
 const Logo = () => {
     return (
