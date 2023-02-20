@@ -30,14 +30,13 @@ const SearchBar = () => {
 };
 
 const SearchModal = ({ onClose }) => {
-    // Add your modal code here
     return (
       <div className={styles.modal}>
         <button className={styles.closeButton} onClick={onClose}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
         <div className={styles.modalContent}>
-          {/* Add your search form and results here */}
+          Formulaire
         </div>
       </div>
     );
