@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar__head}>
-      <div>Mettre mon logement sur Airbnb</div>
+      <p>Mettre mon logement sur Airbnb</p>
       <FontAwesomeIcon icon={faGlobe} />
       <button className={styles.dropdownMenu} onClick={toggleDropdown}>
         <FontAwesomeIcon icon={faBars} />
@@ -37,10 +37,10 @@ const Navbar = () => {
         {isDropdownOpen && (
           <ul className={styles.dropdownContent} ref={dropdownRef}>
             <li>
-              <Link href="/login">Se connecter</Link>
+              <Link href="/login/login">Se connecter</Link>
             </li>
             <li>
-              <Link href="/register">S'inscrire </Link>
+              <Link href="/register/register">S'inscrire </Link>
             </li>
           </ul>
         )}
