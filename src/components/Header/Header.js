@@ -1,17 +1,14 @@
-import Link from 'next/link'
 import React from 'react'
+import Logo from '../Logo/Logo'
 import Navbar from '../Navbar/Navbar'
-
-import logo from '../../../public/logo.jpg'
+import SearchBar from '../SearchBar/SearchBar'
+import styles from './Header.module.scss'
 
 const Header = () => {
   return (
-    <header>
-      <div className="logo">
-        <Link href="/" passHref>
-          <img src={logo.src} alt="Airbnb" />
-        </Link>
-      </div>
+    <header className={styles.header_navbar}>
+      <Logo />
+      <SearchBar />
       <Navbar />
     </header>
   )
