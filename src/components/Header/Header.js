@@ -1,19 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
+import Navbar from '../Navbar/Navbar'
+
+import logo from '../../../public/logo.jpg'
 
 const Header = () => {
   return (
     <header>
-      <nav>
-        <ul>
-          <li>
-          <Link href="/" passHref>Home</Link>
-          </li>
-          <li>
-            <Link href="/about" passHref>About</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="logo">
+        <Link href="/" passHref>
+          <img src={logo.src} alt="Airbnb" />
+        </Link>
+      </div>
+      <Navbar />
     </header>
   )
 }
