@@ -24,7 +24,7 @@ const Footer = () => {
           <div className={styles.footer__item}>Infos sur l'entreprise</div>
           <div className={styles.footer__item}>Destinations</div>
           <div className={styles.footer__item}>
-            <button className={styles.footer__button} onClick={handleDropdownClick}>
+            <button onClick={handleDropdownClick}>
               Assistance et ressources <FontAwesomeIcon icon={faChevronUp} />
             </button>
             {showDropdown && (
