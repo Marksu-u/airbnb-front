@@ -1,8 +1,9 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import MainLayout from '@/layouts/MainLayout'
+
 import styles from '@/styles/global.scss'
-import Card from '@/components/Card/Card';
+
+import MainLayout from '@/layouts/MainLayout'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'

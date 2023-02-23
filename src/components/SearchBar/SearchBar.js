@@ -6,9 +6,7 @@ import styles from "./SearchBar.module.scss";
 import SearchModal from "../SearchModal/SearchModal";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons'
-
-
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const SearchBar = () => {
     const [showModal, setShowModal] = useState(false);
