@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
+import TitlePage from "@/components/TitlePage/TitlePage";
 
 import styles from "./register.module.scss";
 
@@ -26,7 +27,7 @@ const Register = () => {
     
     return (
         <div className="page__register">
-          {/* <TitlePage title="Create your account"/> */}
+          <TitlePage title="Inscription"/>
           <form className={styles.form__register}>
             <Input
               titleLabel="Prénom"
