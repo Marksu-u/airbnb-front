@@ -3,8 +3,12 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./SearchBar.module.scss";
 
+import SearchModal from "../SearchModal/SearchModal";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const SearchBar = () => {
     const [showModal, setShowModal] = useState(false);
@@ -28,18 +32,5 @@ const SearchBar = () => {
       </>
     );
 };
-
-const SearchModal = ({ onClose }) => {
-    return (
-      <div className={styles.modal}>
-        <button className={styles.closeButton} onClick={onClose}>
-          <FontAwesomeIcon icon={faTimes} />
-        </button>
-        <div className={styles.modalContent}>
-          Formulaire
-        </div>
-      </div>
-    );
-  };
 
 export default SearchBar;

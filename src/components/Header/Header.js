@@ -1,7 +1,9 @@
 import React from 'react'
+
 import Logo from '../Logo/Logo'
 import Navbar from '../Navbar/Navbar'
 import SearchBar from '../SearchBar/SearchBar'
+
 import styles from './Header.module.scss'
 
 const Header = () => {
