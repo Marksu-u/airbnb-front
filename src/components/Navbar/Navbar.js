@@ -37,10 +37,10 @@ const Navbar = () => {
         {isDropdownOpen && (
           <ul className={styles.dropdownContent} ref={dropdownRef}>
             <li>
-              <Link href="/login/login">Se connecter</Link>
+              <Link href="/login">Se connecter</Link>
             </li>
             <li>
-              <Link href="/register/register">S'inscrire </Link>
+              <Link href="/register">S'inscrire </Link>
             </li>
           </ul>
         )}
