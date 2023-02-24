@@ -9,7 +9,7 @@ const Card = ({ place }) => {
     return (
         
                 <div className={styles.card}>
-                    <Link href={`room/room/${place.id}`}>
+                    <Link href={`room/${place.id}`}>
                     <div className={styles.card__image}>
                         <img src={place.image} alt={place.title} />
                     </div>

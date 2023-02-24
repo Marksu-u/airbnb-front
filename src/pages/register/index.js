@@ -3,6 +3,8 @@ import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
 import TitlePage from "@/components/TitlePage/TitlePage";
 
+import AuthService from "@/services/auth.service.js";
+
 import styles from "./register.module.scss";
 
 const Register = () => {
@@ -18,12 +20,12 @@ const Register = () => {
         setUserForm({ ...userForm, [e.target.name]: e.target.value });
       }
 
-    //   const submitForm = (e) => {
-    //     e.preventDefault();
-    //     AuthService.register(userForm)
-    //       .then(user => console.log(user))
-    //       .catch(err=>console.log(err))
-    //   }
+      const submitForm = (e) => {
+        e.preventDefault();
+        AuthService.register(userForm)
+          .then(user => console.log(user))
+          .catch(err=>console.log(err))
+      }
     
     return (
         <div className="page__register">
