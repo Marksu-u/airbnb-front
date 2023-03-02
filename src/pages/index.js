@@ -6,7 +6,7 @@ import MultiCards from "@/components/MultiCards/MultiCards";
 const places = [
   {
       id: 1,
-      title: "Palais de la Brie",
+      title: "Palais de la Bourse",
       description: "4 personnes · 2 chambres · 2 lits · 1 salle de bain",
       image: "https://imgs.search.brave.com/U8MU2cDSYW4Uj0tl5ZPTvfY7pUMgMFY_8gewud0z4E4/rs:fit:1200:810:1/g:ce/aHR0cHM6Ly93d3cu/cmVnZW50LWhvbGlk/YXlzLmNvLnVrL3Vw/bG9hZC1maWxlcy9w/cm9kdWN0LWhvdGVs/cy1nYWxsZXJ5L2xl/LW1lcmlkaWVuLWJy/aXN0b2wtaG90ZWwt/cG9sYW5kXzIuanBn",
       rating: 4.5,

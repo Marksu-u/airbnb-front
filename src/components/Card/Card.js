@@ -9,7 +9,7 @@ const Card = ({ place }) => {
     return (
         
                 <div className={styles.card}>
-                    <Link href={`room/${place.id}`}>
+                    <Link href={{ pathname: "/room", query: { ...place } }}>
                     <div className={styles.card__image}>
                         <img src={place.image} alt={place.title} />
                     </div>
