@@ -35,7 +35,7 @@ const SearchModal = ({ onClose }) => {
           inputName="name"
           inputValue={searchForm.name || ""}
           inputOnChange={(e) => {
-            handleInput(e);
+            handleSearch(e);
           }}
         />
         <Input
@@ -45,7 +45,7 @@ const SearchModal = ({ onClose }) => {
           inputName="location"
           inputValue={searchForm.location || ""}
           inputOnChange={(e) => {
-            handleInput(e);
+            handleSearch(e);
           }}
         />
         <Button
