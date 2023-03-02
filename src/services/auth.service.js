@@ -1,13 +1,26 @@
 import axios from 'axios';
 
-const API_URL = 'https://localhost:5000/api/v1/'
+// add env variable for API_URL in .env file
+const API_URL = process.env.API_URL;
 
 export default {
+
   register(body) {
-    return axios.post('http://localhost:5000/api/v1/register', body, {
+    return axios.post(API_URL + 'register', body, {
+      headers: {
+        'Content-type': 'application/json'
+      }
+    }).then(res => res.data);
+  },
+
+
+  login(body) {
+    return axios.post(API_URL + 'login', body, {
       headers: {
         'Content-type': 'application/json'
       }
     }).then(res => res.data);
   }
+
+
 }
